@@ -56,7 +56,7 @@ The goal of this process is to be able to extract a reduced repro for which you 
     If you don't already have a specific project of interest, you'll probably want to choose the largest `trace` file and the corresponding `types` file.
     For the remaining steps, we'll refer to the chosen files as `trace.json` and `types.json`, respectively.
 
-5.  Navigate to [`about://tracing`](about://tracing) and click `Load`.\
+5.  Navigate to [`about://tracing`](about://tracing) (In a chromium based browser) and click `Load`.\
     Navigate to and select `trace.json`.
 
 6.  These trace dump files can get big, to a point where it is impossible to load them.
@@ -71,7 +71,7 @@ The goal of this process is to be able to extract a reduced repro for which you 
 
     will downsample the trace file to a 5ms frequency, close off unterminated events (in case the tsc process crashed), and produce a gzipped file.
 
-7.  If you've never visited [`about://tracing`](about://tracing) before, you'll see something like this:\
+7.  If you've never visited [`about://tracing`](about://tracing) (in Chrome) before, you'll see something like this:\
     ![Initial view of `about://tracing`](https://raw.githubusercontent.com/wiki/Microsoft/TypeScript/images/tracingJustOpened.png)
     1.  Use the little triangle to expand the view of the "Main" thread.
         For convenience, we ignore all other threads.
